@@ -10,6 +10,7 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 
@@ -44,15 +45,16 @@
                 <input type="number" id="savings" placeholder="请输入储蓄金额" aria-label="当前家庭储蓄">
             </div>
             <button class="button" onclick="calculateMetrics()"><i class="fa-solid fa-calculator"></i> 计算</button>
+
         </div>
         <div class="result-section">
-            <h1>计算结果</h1>
+            <h2>计算结果</h2>
             <div class="result" id="result">结果将在这里显示。</div>
-            <h1>建议</h1>
+            <h2><i class="fa-solid fa-robot"></i> AI 建议</h2>
             <div class="advice" id="advice">建议将在这里显示。</div>
         </div>
         <div class="info-section">
-            <h1>计算公式与介绍</h1>
+            <h2>计算公式与介绍</h2>
             <p><strong>房价收入比：</strong> 房价收入比 = 房产总价 / 年收入（年收入 = 月收入 × 12）。这是衡量房价相对家庭收入的指标。一般来说，房价收入比超过 10 被认为是偏高的。</p>
             <p><strong>月供收入比：</strong> 月供收入比 = 每月还款额 / 月收入。通常，月供占收入比不应超过 40%，超过可能会对家庭财务产生压力。</p>
             <p><strong>储蓄覆盖率：</strong>
